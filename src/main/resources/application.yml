@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: 107754
+    url: jdbc:mysql://localhost:3306/hhsturim?serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+
+
+
+
+
