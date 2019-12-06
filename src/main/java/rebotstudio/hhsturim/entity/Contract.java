@@ -1,7 +1,10 @@
 package rebotstudio.hhsturim.entity;
 
+import lombok.ToString;
+
 import java.util.Date;
 
+@ToString
 public class Contract {
     private Integer id;
 

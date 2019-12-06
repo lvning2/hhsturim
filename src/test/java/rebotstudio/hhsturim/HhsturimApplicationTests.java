@@ -2,6 +2,7 @@ package rebotstudio.hhsturim;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import rebotstudio.hhsturim.entity.Customer;
 import rebotstudio.hhsturim.entity.User;
 import rebotstudio.hhsturim.entity.UserExample;
 import rebotstudio.hhsturim.mapper.UserMapper;
@@ -25,17 +26,14 @@ class HhsturimApplicationTests {
         System.out.println(dataSource);
 
     }
-
+    @Resource
     private UserMapper userMapper;
 
     @Test
     public void test(){
 
-        UserExample example=new UserExample();
-        UserExample.Criteria criteria = example.createCriteria();
-
-        List<User> users = userMapper.selectByExample(example);
-        System.out.println(users);
+        List<Customer> customers = userMapper.get(1001);
+        System.out.println(customers);
 
     }
 

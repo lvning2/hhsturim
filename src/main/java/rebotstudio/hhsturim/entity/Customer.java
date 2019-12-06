@@ -1,5 +1,8 @@
 package rebotstudio.hhsturim.entity;
 
+import lombok.ToString;
+
+@ToString
 public class Customer {
     private Integer id;
 
